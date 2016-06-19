@@ -33,6 +33,11 @@
     
     self.person = [Person new];
     self.uitextview.text = [_person sayName];
+    //交换回原来最初的方法-->threeViewController的方法交换
+    Method m1 = class_getInstanceMethod([Person class], @selector(sayName));
+    Method m2 = class_getInstanceMethod([Tool class], @selector(changeMethod));
+    
+    method_exchangeImplementations(m2, m1);
 }
 
 
