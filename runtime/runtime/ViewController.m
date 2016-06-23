@@ -18,10 +18,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-
-    
-    
+    //毛韶谦
 }
 
 - (IBAction)click:(id)sender {
